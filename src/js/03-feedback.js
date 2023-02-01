@@ -13,14 +13,9 @@ function onFormInput(evt) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
 }
 
-// function fillTextField() {
-//   form.message.value = formData.message || '';
-//   form.email.value = formData.email || '';
-// }
-
 function fillTextField() {
-  document.querySelector('textarea').value = formData.message || '';
-  document.querySelector('input').value = formData.email || '';
+  form.message.value = formData.message || '';
+  form.email.value = formData.email || '';
 }
 
 function onFormSubmit(e) {
